@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { Provider } from "react-redux";
 import App from "./App";
 import "./styles/main.scss";
+import "react-toastify/dist/ReactToastify.css";
 import configureStore from "./redux/configureStore";
 
 const store = configureStore();
