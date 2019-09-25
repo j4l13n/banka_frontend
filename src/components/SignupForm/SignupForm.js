@@ -7,6 +7,7 @@ const SignupForm = ({ onSave, onChange, user }) => (
   <div className="column-4-sign">
     <form onSubmit={onSave} id="signup">
       <TextInput
+        label="Firstname"
         type="text"
         value={user.firstname}
         onChange={onChange}
@@ -15,6 +16,7 @@ const SignupForm = ({ onSave, onChange, user }) => (
         name="firstname"
       />
       <TextInput
+        label="Lastname"
         type="text"
         value={user.lastname}
         onChange={onChange}
@@ -23,6 +25,7 @@ const SignupForm = ({ onSave, onChange, user }) => (
         name="lastname"
       />
       <TextInput
+        label="Email"
         type="email"
         value={user.email}
         name="email"
@@ -31,6 +34,7 @@ const SignupForm = ({ onSave, onChange, user }) => (
         placeholder="your Email (yourname@server.com)"
       />
       <TextInput
+        label="Password"
         type="password"
         value={user.password}
         id="password"

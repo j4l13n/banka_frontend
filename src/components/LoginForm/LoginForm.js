@@ -17,6 +17,7 @@ const LoginForm = ({ user, onChange, onSave }) => (
         placeholder="your Email (yourname@server.com)"
       />
       <TextInput
+        label="Password"
         type="password"
         value={user.password}
         id="password"
