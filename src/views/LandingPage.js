@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class LandingPage extends Component {
   render() {
@@ -8,19 +9,19 @@ class LandingPage extends Component {
           <span className="navbar-toggle" id="js-navbar-toggle">
             <i className="fa fa-bars fa-color"></i>
           </span>
-          <a href="./index.html" className="logo">
+          <Link to="/" className="logo">
             Banka
-          </a>
+          </Link>
           <ul className="main-nav" id="js-menu">
             <li>
-              <a href="./html/login.html" className="nav-links">
+              <Link to="/login" className="nav-links">
                 login
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="./html/signup.html" className="nav-links">
+              <Link to="/signup" className="nav-links">
                 sign up
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -29,12 +30,12 @@ class LandingPage extends Component {
             <h2>Welcome to Banka</h2>
             <p>You make money, We save and improve your life journey.</p>
             <div className="">
-              <a href="./html/login.html" className="login">
+              <Link to="/login" className="login">
                 Login
-              </a>
-              <a href="./html/signup.html" className="signup">
+              </Link>
+              <Link to="/signup" className="signup">
                 Sign up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
