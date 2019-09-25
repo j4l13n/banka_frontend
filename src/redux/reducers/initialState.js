@@ -1,3 +1,5 @@
 export const initialState = {
-  users: {}
+  users: {},
+  registering: false,
+  loggedin: false
 };
