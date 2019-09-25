@@ -55,6 +55,7 @@ export const login = user => dispatch => {
       } else {
         toast.success(`Welcome to bank ${response.data.firstname}`);
         sessionStorage.setItem("token", response.data.token);
+        window.location = "/";
         dispatch(loginSuccess(response));
       }
     })

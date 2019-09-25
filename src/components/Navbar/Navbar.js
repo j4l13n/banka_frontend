@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const token = sessionStorage.getItem("token");
+const token = sessionStorage.getItem("token") || null;
 console.log(token);
 
 const Navbar = () => (
@@ -14,7 +14,7 @@ const Navbar = () => (
         Banka
       </Link>
       <ul className="main-nav" id="js-menu">
-        {token !== undefined ? (
+        {token === null ? (
           <>
             <li>
               <Link to="/login" className="nav-links">
@@ -28,7 +28,11 @@ const Navbar = () => (
             </li>
           </>
         ) : (
-          <li>Logout</li>
+          <li>
+            <Link to="/" className="nav-links">
+              Logout
+            </Link>
+          </li>
         )}
       </ul>
     </nav>
