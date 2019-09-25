@@ -7,6 +7,7 @@ import SideMain from "../components/SideMain/SideMain";
 import SignupForm from "../components/SignupForm/SignupForm";
 import { signup } from "../redux/actions/userActions";
 
+const token = sessionStorage.getItem("token") || null;
 class SignupPage extends Component {
   constructor(props) {
     super(props);

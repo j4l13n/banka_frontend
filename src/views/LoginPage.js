@@ -8,6 +8,7 @@ import SideMain from "../components/SideMain/SideMain";
 import LoginForm from "../components/LoginForm/LoginForm";
 import { login } from "../redux/actions/userActions";
 
+const token = sessionStorage.getItem("token") || null;
 class LoginPage extends Component {
   constructor(props) {
     super(props);
