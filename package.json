@@ -49,7 +49,7 @@
     "@emotion/styled": "^10.0.15",
     "Dante2": "0.5.0-rc19",
     "airbnb": "0.0.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
